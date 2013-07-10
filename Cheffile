@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+# will change back to opscode as soon my changes are integrated
+cookbook 'graylog2',
+  :git => "https://github.com/bzikarsky/graylog2-chef-repo"
+
+cookbook 'apt', '1.7'
+cookbook 'build-essential'
+cookbook 'git'
+cookbook 'mongodb'
+cookbook 'rbenv'
+cookbook 'apache2'
